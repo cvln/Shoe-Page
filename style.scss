@@ -41,13 +41,15 @@ h6 {
    font-size: 1.25rem;
 }
 
-p, button {
+p,
+button {
    font-weight: 300;
    font-size: 1rem;
 }
 
 body {
-   overflow: hidden;
+   overflow-y: scroll;
+   overflow-x: hidden;
    font-family: $fonts;
    background-color: #141414;
    display: flex;
@@ -56,6 +58,7 @@ body {
    align-items: center;
    gap: 10px;
    padding: 0 120px;
+   max-height: fit-content;
 }
 
 .navbar {
@@ -131,7 +134,7 @@ body {
    flex-direction: column;
    align-items: baseline;
    gap: 25px;
-   // padding: 100px 0px;
+   padding: 70px 0px 0px 0px;
    // border: 1px solid seashell;
 }
 
@@ -161,14 +164,16 @@ body {
    display: flex;
    flex-direction: column;
    gap: 10px;
-   background: radial-gradient(47.85% 1353.38% at 19.54% 58.38%, 
-               rgba(255, 255, 255, 0.3) 0%, 
-               rgba(217, 217, 217, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+   background: radial-gradient(47.85% 1353.38% at 19.54% 58.38%,
+         rgba(255, 255, 255, 0.3) 0%,
+         rgba(217, 217, 217, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+   ;
    border-radius: 10px;
    padding: 25px;
 }
 
-.main .main-signup .main-signup-h1 h5 {   
+.main .main-signup .main-signup-h1 h5 {
    background: linear-gradient(186.45deg, #FFFFFF 54.69%, #C69749 94.94%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -218,23 +223,20 @@ body {
    justify-content: center;
    align-items: center;
    position: absolute;
-   border: 1px solid seashell;
+   top: 50px;
+   right: 0;
 }
 
 .main .main-image .main-eclipse {
-   width: 502.6px;
-   height: 500px;
+   width: 472.6px;
+   height: 470px;
    background: radial-gradient(50% 50% at 50% 50%, #C69749 0%, rgba(217, 217, 217, 0) 100%);
    opacity: 0.8;
-   position: absolute;
-   top: 20px;
-   right: 20px;
    z-index: -1;
 }
-/*
-.main .main-image img {
-   width: 400px;
 
+.main .main-image img {
+   max-width: 370px;
 }
 
 .main .main-image .image-1 {
@@ -253,19 +255,47 @@ body {
 //  mirror for .image-1
 .main .main-image .image-3 {
    position: absolute;
-   top: 294px;
+   top: 274px;
    right: 30px;
+   opacity: .5;
    mix-blend-mode: soft-light;
    transform: scaleY(-1);
-   z-index: -3;
+   z-index: -1;
 }
 
 //  mirror for .image-2
 .main .main-image .image-4 {
    position: absolute;
-   top: 346px;
+   top: 326px;
    right: -96px;
+   opacity: .5;
    mix-blend-mode: soft-light;
    transform: rotate(-19.45deg) scaleY(-1);
-   z-index: -2;
+   z-index: -1;
+}
+
+// section-offers
+.section-offers {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 25px;
+   padding: 25px 50px;
+   // border: 1px solid skyblue;
+}
+
+.section-offers .section-offers-info {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section-offers .section-offers-info h4 {
+   margin-top: 60px;
+   padding: 10px 5px;
+   background: linear-gradient(180deg, #C69749 0%, #FFFFFF 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
 }
