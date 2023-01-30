@@ -6,49 +6,55 @@
 
 h1 {
   font-weight: 400;
-  font-size: 47.78px;
+  font-size: 3.815rem;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 39.8px;
+  font-size: 3.052rem;
 }
 
 h3 {
   font-weight: 400;
-  font-size: 33.18px;
+  font-size: 2.441rem;
 }
 
 h4 {
   font-weight: 400;
-  font-size: 27.65px;
+  font-size: 1.953rem;
 }
 
 h5 {
   font-weight: 400;
-  font-size: 23.04px;
+  font-size: 1.563rem;
 }
 
 h6 {
   font-weight: 400;
-  font-size: 19.2px;
+  font-size: 1.25rem;
+}
+
+p, button {
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 body {
   overflow: hidden;
   font-family: "Poppins", Helvertica, sans-serif;
   background-color: #141414;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 0;
-  padding: 0;
+  padding: 0 120px;
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 70px;
@@ -75,10 +81,14 @@ body {
 }
 
 .navbar-link {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 5px;
+}
+
+.navbar-link:last-child {
+  padding-right: 5px;
 }
 
 .navbar-link .navbar-li {
@@ -99,19 +109,19 @@ body {
 }
 
 .main {
-  display: grid;
-  grid-template-rows: auto auto auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   width: 100%;
   height: auto;
-  gap: 10px;
 }
 
 .main .main-text {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: baseline;
   gap: 25px;
-  padding: 100px 0px;
 }
 
 .main .main-h1 {
@@ -121,8 +131,9 @@ body {
 }
 
 .main .main-p {
-  width: 450px;
+  width: 380px;
   color: #f5f5f5;
+  line-height: 1.3em;
 }
 
 .main .main-h1 span {
@@ -130,6 +141,59 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.main .main-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: radial-gradient(47.85% 1353.38% at 19.54% 58.38%, rgba(255, 255, 255, 0.3) 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.main .main-signup .main-signup-h1 h5 {
+  background: linear-gradient(186.45deg, #FFFFFF 54.69%, #C69749 94.94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main .main-signup .main-signup-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+
+.main .main-signup .main-signup-input .signup-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: flex-end;
+  gap: 5px;
+  color: #f5f5f5;
+}
+
+.main .main-signup .main-signup-input .signup-input input {
+  width: auto;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.main .main-signup .main-signup-input .signup-input button {
+  width: auto;
+  height: 30px;
+  font-family: "Poppins", Helvertica, sans-serif;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #C69749;
 }
 
 .main .main-image {
@@ -183,26 +247,4 @@ body {
   mix-blend-mode: soft-light;
   transform: rotate(-19.45deg) scaleY(-1);
   z-index: -2;
-}
-
-.main .main-signup {
-  display: flex;
-  flex-direction: column;
-}
-
-.main .main-signup h5 {
-  background: linear-gradient(186.45deg, #FFFFFF 54.69%, #C69749 94.94%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.main .main-input {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 0px;
-  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
