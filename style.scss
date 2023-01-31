@@ -146,7 +146,7 @@ body {
 }
 
 .main .main-p {
-   width: 380px;
+   max-width: 380px;
    color: $primary-colorTwo;
    line-height: 1.3em;
    // border: 1px solid seashell;
@@ -178,7 +178,6 @@ body {
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    background-clip: text;
-   // text-fill-color: transparent;
 }
 
 .main .main-signup .main-signup-input {
@@ -201,7 +200,7 @@ body {
 }
 
 .main .main-signup .main-signup-input .signup-input input {
-   width: auto;
+   width: 100%;
    height: 30px;
    padding: 5px;
    border-radius: 10px;
@@ -236,7 +235,7 @@ body {
 }
 
 .main .main-image img {
-   max-width: 370px;
+   max-width: 78%;
 }
 
 .main .main-image .image-1 {

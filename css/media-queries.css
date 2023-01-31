@@ -1,1 +1,84 @@
-/*# sourceMappingURL=media-queries.css.map */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-weight: 400;
+    font-size: 1.953rem;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 1.563rem;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+  body {
+    padding: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-link {
+    display: none;
+  }
+  .main .main-h1, .main .main-p {
+    text-align: center;
+  }
+  .main .main-signup {
+    border: 1px solid skyblue;
+    text-align: center;
+  }
+  .main .main-signup .main-signup-input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-self: flex-start;
+    border: 1px solid skyblue;
+    max-width: 100%;
+  }
+  .main .main-signup .main-signup-input .signup-input {
+    align-self: flex-start;
+    padding: 0 25px;
+    border: 1px solid skyblue;
+  }
+  .main .main-image {
+    position: relative;
+  }
+  .main .main-image img {
+    max-width: 58%;
+  }
+  .main .main-image .image-1 {
+    top: 0;
+    right: 50px;
+  }
+  .main .main-image .image-2 {
+    top: 50px;
+    right: 30px;
+  }
+  .main .main-image .image-3 {
+    top: 200px;
+    right: 50px;
+  }
+  .main .main-image .image-4 {
+    top: 236px;
+    right: -36px;
+  }
+  .main .main-image .main-eclipse {
+    width: 382.6px;
+    height: 380px;
+  }
+  .section-offers {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+  }
+  .section-offers .section-offers-info h4 {
+    margin-top: 20px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=media-queries.css.map */
