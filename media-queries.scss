@@ -1,37 +1,85 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-   
+@media only screen and (max-width: 800px) {
+
    h1 {
       font-weight: 400;
       font-size: 1.953rem;
    }
-   
+
    h2 {
       font-weight: 400;
       font-size: 1.563rem;
    }
-   
+
    h3 {
       font-weight: 400;
       font-size: 1.25rem;
    }
 
-   body {
-      padding: 10px;
+   main,
+   section {
+      padding-left: 15px;
+      padding-right: 15px;
    }
 
    .navbar {
       flex-direction: column;
    }
 
-   .navbar-link {
-      display: none;
+   .main {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      gap: 0;
+
+      .main-image {
+         width: fit-content;
+         padding: 25px;
+
+         img {
+            max-width: 250px;
+         }
+
+         .image-1 {
+            top: 10px;
+            right: 0;
+         }
+
+         .image-2 {
+            top: 50px;
+            right: -10px;
+         }
+
+         //  mirror for .image-1
+         .image-3 {
+            top: 195px;
+            right: 0;
+         }
+
+         //  mirror for .image-2
+         .image-4 {
+            top: 220px;
+            right: -70px;
+         }
+
+         .main-eclipse {
+            width: 300px;
+            height: 300px;
+         }
+      }
+
+      .main-text {
+         justify-content: center;
+         align-items: center;
+         padding: 25px;
+
+         h1,
+         p {
+            text-align: center;
+         }
+      }
    }
 
-
-   .main .main-h1, .main .main-p {
-      text-align: center;
-   }
 
    .main .main-signup {
       //padding: 0;
@@ -55,55 +103,22 @@
          border: 1px solid skyblue;
       }
    }
+}
 
-   .main .main-image {
-      position: relative;
-      // border: 1px solid skyblue;
+.section-offers {
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 25px;
+   gap: 10px;
+
+   svg {
+      width: 40px;
+      height: 40px;
    }
 
-   .main .main-image img {
-      max-width: 58%;
-   }
-
-   .main .main-image .image-1 {
-      // position: absolute;
-      top: 0;
-      right: 50px;
-   }
-
-   .main .main-image .image-2 {
-      top: 50px;
-      right: 30px;
-   }
-
-   //  mirror for .image-1
-   .main .main-image .image-3 {
-      top: 200px;
-      right: 50px;
-   }
-
-   //  mirror for .image-2
-   .main .main-image .image-4 {
-      top: 236px;
-      right: -36px;
-   }
-
-   .main .main-image .main-eclipse {
-      width: 382.6px;
-      height: 380px;
-   }
-
-   .section-offers {
-      // border: 1px solid skyblue;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 0;
-      gap: 10px;
-   }
-
-   .section-offers .section-offers-info h4 {
-      margin-top: 20px;
+   .section-offers-info h4 {
+      font-size: large;
    }
 }
 

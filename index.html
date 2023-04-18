@@ -6,122 +6,127 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="./src/css/style.css">
+   <link rel="stylesheet" href="./src/css/media-queries.css">
 
    <title>Shoe Landing Page</title>
 </head>
 
 <body>
-   <div class="navbar">
-      <div class="navbar-logo">
-         <h3 class="navbar-h1">ShoeMarkt</h3>
-      </div>
-      <div class="navbar-link">
-         <li class="navbar-li"><a href="#">Product</a></li>
-         <li class="navbar-li"><a href="#">Design</a></li>
-         <li class="navbar-li"><a href="#">Service</a></li>
-         <li class="navbar-li"><a href="#">About</a></li>
-         <li class="navbar-li">Toggle
-            <!-- <img src="images/" alt="toggle"> -->
-         </li>
-      </div>
-   </div>
-
-   <main class="main">
-
-      <div class="main-image">
-         <img class="image-1" src="images/heels-black.png" alt="heels">
-         <img class="image-2" src="images/heels-black.png" alt="heels">
-         <img class="image-3" src="images/heels-black.png" alt="heels">
-         <img class="image-4" src="images/heels-black.png" alt="heels">
-         <div class="main-eclipse"></div>
-      </div>
-
-      <div class="main-text">
-         <h1 class="main-h1">
-            The Next <br>
-            <span class="main-h1-gradient">Limited Edition</span><br>
-            Ladies Footwear.
-         </h1>
-
-         <p class="main-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-         </p>
-      </div>
-
-      <div class="main-signup">
-         <div class="main-signup-h1">
-            <h5>Sign up to avail!</h5>
+   
+      <div class="navbar">
+         <div class="navbar-logo">
+            <h3 class="navbar-h1">ShoeMarkt</h3>
          </div>
-
-         <div class="main-signup-input">
-            <div class="signup-input">
-               <label for="Email">Email</label>
-               <input type="text">
-            </div>
-
-            <div class="signup-input">
-               <label for="Password">Password</label>
-               <input type="text">
-            </div>
-
-            <div class="signup-input">
-               <button>Sign up</button>
-            </div>
+         <div class="navbar-link">
+            <li>
+               <a href="#">Product</a>
+            </li>
+            <li>
+               <a href="#">Design</a>
+               </li>
+            <li>
+               <a href="#">Service</a>
+            </li>
+            <li>
+               <a href="#">About</a>
+               </li>
          </div>
       </div>
-   </main>
+   
+      <main class="main">    
+         <div class="main-text">
+            <h1>
+               The Next <br>
+               <span class="main-h1-gradient">Limited Edition</span><br>
+               Ladies Footwear.
+            </h1>
+   
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+               dolore magna aliqua.
+            </p>
+         </div>
 
-   <section class="section-offers">
-
-      <div class="section-offers-info">
-         <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect x="0.880981" width="62.4613" height="60" fill="url(#pattern0)" />
-            <defs>
-               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0_5_51" transform="matrix(0.0160099 0 0 0.0166667 0.0197029 0)" />
-               </pattern>
-               <image id="image0_5_51" width="60" height="60"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADuUlEQVR4nO2aS2gTURSGr4oiSkHQhRsV3AgqbnysBBG1c05b6wODiGBduVEUF+JSd1oVipqcm0Cx0oWLgCsfm1K6SO5NK/VRaBVFQbRSURQfrQpRIydpWpvmMZNMOjPp/DC7uefOdx/nnnPmCuHLly9fvnxNqD+ycb6WeEIR9CqJX7XElJVnvE1CER5nW8LN6gs2LNcSHluFLPI8YpvCjXrSuWuxkjhgI2x2xgfYtnCblMSbdsNOPIS3hJuUkMbR6TMD92ORppWF2liF5j6EGxQLGusUwVjOBw6WWoaKMGZpaROMcV/C8X1LODT1w3C0V8JaewYSR3Ogn8fbm+uEq/YtQUs1t4pj+1kTtExfdthhdz9sM88SP2J3PyWlCIZzRv5lNY4Ptsm2c46qN2KmpSW+M+FsvsdDDdvztwdV9tlM+NYBYNinJSZLBw7wNF+IWMG5nFQh3CuckJJwwBQ0GSdtASb4rSUcFk5KmYKGz33Xdyz9v50nYa1AK8JrZQO7CdYCdFJR4/rs+56GNQutJHZl3/U8rFnoBCHyezUBawqa8Nl4VaQ2YM1A8zFVU7BZJcJ4MB+0IvxUyLFxG+FlKZPBiadn1jJ0LcGWhHYa9kGofoUiOJuuK3PFgeCbJtRawumetj1LbN7TzuzZeHtzXSahh24l4U+R8HBUE4biZKwpty/OdDi945x2RrOe1LlzcxMR2KolRjhvtRLbKsK/HDXpMOxOpcQc4WbFuDgm8byW8NpSAF8QHl4oiadcWSxn2QFZYNa/aIlXVbBhlZgNwDoLnvYBcEeTsVPMBmA9ddYfKoJjPR3bFs4KYD056yPsN/ojTctmBbCeBP+hJF4q579vPIybFGF7+kgj+KglXDFlx0ngyaUOrWYgeStwfKAI+/LaIrzsDWAJI8W+MUaNq3lQMjNZ1NYHbwATvM8XCMUlNGiJd4tFe54E1hIvZL+Hy7eajDNawivLdsjlSzrtrQla2dmoEGxO/ygj/FmGraSS2OYZp1XZoGFXIgQbSoJm5VlQwiEVMhqFVemihqE7ETb2c7rYH2laxCVVRXjbVImmaqAwzD/G2alZhmXlMfpLS+gstkz4rhQXBezKsEzOKF93uFjxFQddQbjHo8xJgZYYzZRmqpZ8dNp2IU2lrwQahyq91pcNDvgstA2Y8J7jN3VKaTAaWKAJAuw9uRIyow7JaXGti/ddkUL7NIfE6WM0GpgnvKyeTNAfKHSPwzaH5EZpWb9FS7jBs56ZeQi69oasL1++fPkS1dU/A9kBSAgCbucAAAAASUVORK5CYII=" />
-            </defs>
-         </svg>
-         <h4>Discount for up to 30%.</h4>
-      </div>
-
-      <div class="section-offers-info">
-         <svg width="63" height="60" viewBox="0 0 63 60" fill="none" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="62.4613" height="60" fill="url(#pattern0)" />
-            <defs>
-               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0_5_50" transform="matrix(0.0160099 0 0 0.0166667 0.0197029 0)" />
-               </pattern>
-               <image id="image0_5_50" width="60" height="60"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1ElEQVR4nO1aWYhcRRQto4nGBVdcEUUDfrggRP0QcdRM+t3bkxgRW1w+zIfLp/phRBFG/EhGTIwh3fd2k2hk9MdWwTUgMjQ6r25n4ogicQsEXDIqMWKiIY5O4sjt6WdXP3u6MzM99HvOO1A/tbxXp27V3aqMSZAgQYIECRLMGdgc3iIMA5ZxvzCOCuNXwvDUcKH75GbjfIa0JXjULcI955koQxj7hHG8YSH80tLSMxuN+6DgnSMEv7n9LeOb4+PmKBNV+DlITUq2RvrVRmMt4ZY6sgS7hwvLzjBRhiV8K0TucUt4kzCO1KQGh/2N3efWjcvB1Vrv9tFxJuoQxj3Odvwu2I6W8Ul3IXxOrwjGaB8hlJB0V5s4wBL+5Ux6W60e7ncJldlbGbQJw92hbV8eLiyeb+IAS/CTs51/GO/tnaf1wrimjlQelmv9p/1LT7CE3zu7Yv8g9Vxk4gJL+Hq9tGCtcPp2S/hLbSHgUHnT8rO0v5qq0Jm/y8QJkoMuS/h3C039kvYts3ehZTjoSPdFE0dY8p6YnCx8Mkg9p2o/YSw6531nKdt1ookrbB6WqNOg5sgy7hWCj4RxlazLLNR2P5e+0SH7p5/Hq8z/FaX1K04Rgm8dya8K2oRT11iCp9U5sYQvC8PDkXc+WsESvOI4GF+UeruOUW1uGanRMbCE+ySfBhNHlNlbWe+AQFrrhfGxZorOEh6QbGqRiRMkm1okjL87RN7T+tKWruMqUqzVj1nG9RpthUjnTVwwXFg8Xxi3u7bYUs9l2mbz6etDbiVrvSq4+oWAXSYusASrG5Gqtt1Rv4W9B4K2qnYP2kZNHFBm74a6SIhwnxsTayBR7215jwRtluBrR8K/mqhDNqVOc33lsBlS+AW4OCT9zzQzIuR1h8Z9aKIOYXgt5Gnt2roBjm3Qz4bIjYU1tc94n4kyhPDe/5gXhtsa9S3n4Ipweie0UANqr01U4W+++SQheMMyvh8UYXy+2Rgp4OWWsOQGH2p/LeGzarpmdcLbc6nzq1nDbRWjr6uvWQmCh9Q1nM1/a+hoc+lr/Wz6ylklKusyC4UgIwxvNzpDTsz6hzD0D2a9S03cMN7bO69cgOuEsRDygloW3XqVrZqH5ZFOpSpUOhOJNfhmKiQnJw87LeODmrIxUYS0geSkkQ3jBptNX2DmAmGpmZ/DFV1AXreZC4SlXuofa5p21k1LVAg7Uv9R9UZHMhjSAcIO8YOavp1Osl1zX5Zwc9U/1+ubvh3FzIJIE64VWHskJPUoCME9lnBokm/1xYQw7mk2R72B0ISeJfi5xXdG4kJ4pJEjpHkuYXzHjaGbHxHcGxfCa4L5DG1ccroG/ho+Tvk7hM9EnfC/yqZyL6wX4RX/fKpE4ZAQPBcjpTX9oj68xtAtiQaILVHCz23O6zFThTT9MAyU896tGsQPF5YdXybE6jXoWOeIwm5N4gf3ze0gPKoxbrNtMpRNnz3xjKg9EdYRSvSAnndd/GkRDTATd09XuZpRLFYUx+wFH/36lMm0A1ZTN+zdOdO3FIFz4D5mmXEhfDfy2ZQdxcwCTQ9VEnatXwC0VyF1Gj55l+i5q3vX0UIhafhYLGaONnFGacLpzzRIsrdXIUURerMvDC+o1CckD1nV+p2eV4IECRIkMB3AP4++l+4YSPHoAAAAAElFTkSuQmCC" />
-            </defs>
-         </svg>
-         <h4>Premium offer for subscriber.</h4>
-      </div>
-
-      <div class="section-offers-info">
-         <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect x="0.880981" width="62.4613" height="60" fill="url(#pattern0)" />
-            <defs>
-               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0_5_51" transform="matrix(0.0160099 0 0 0.0166667 0.0197029 0)" />
-               </pattern>
-               <image id="image0_5_51" width="60" height="60"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADuUlEQVR4nO2aS2gTURSGr4oiSkHQhRsV3AgqbnysBBG1c05b6wODiGBduVEUF+JSd1oVipqcm0Cx0oWLgCsfm1K6SO5NK/VRaBVFQbRSURQfrQpRIydpWpvmMZNMOjPp/DC7uefOdx/nnnPmCuHLly9fvnxNqD+ycb6WeEIR9CqJX7XElJVnvE1CER5nW8LN6gs2LNcSHluFLPI8YpvCjXrSuWuxkjhgI2x2xgfYtnCblMSbdsNOPIS3hJuUkMbR6TMD92ORppWF2liF5j6EGxQLGusUwVjOBw6WWoaKMGZpaROMcV/C8X1LODT1w3C0V8JaewYSR3Ogn8fbm+uEq/YtQUs1t4pj+1kTtExfdthhdz9sM88SP2J3PyWlCIZzRv5lNY4Ptsm2c46qN2KmpSW+M+FsvsdDDdvztwdV9tlM+NYBYNinJSZLBw7wNF+IWMG5nFQh3CuckJJwwBQ0GSdtASb4rSUcFk5KmYKGz33Xdyz9v50nYa1AK8JrZQO7CdYCdFJR4/rs+56GNQutJHZl3/U8rFnoBCHyezUBawqa8Nl4VaQ2YM1A8zFVU7BZJcJ4MB+0IvxUyLFxG+FlKZPBiadn1jJ0LcGWhHYa9kGofoUiOJuuK3PFgeCbJtRawumetj1LbN7TzuzZeHtzXSahh24l4U+R8HBUE4biZKwpty/OdDi945x2RrOe1LlzcxMR2KolRjhvtRLbKsK/HDXpMOxOpcQc4WbFuDgm8byW8NpSAF8QHl4oiadcWSxn2QFZYNa/aIlXVbBhlZgNwDoLnvYBcEeTsVPMBmA9ddYfKoJjPR3bFs4KYD056yPsN/ojTctmBbCeBP+hJF4q579vPIybFGF7+kgj+KglXDFlx0ngyaUOrWYgeStwfKAI+/LaIrzsDWAJI8W+MUaNq3lQMjNZ1NYHbwATvM8XCMUlNGiJd4tFe54E1hIvZL+Hy7eajDNawivLdsjlSzrtrQla2dmoEGxO/ygj/FmGraSS2OYZp1XZoGFXIgQbSoJm5VlQwiEVMhqFVemihqE7ETb2c7rYH2laxCVVRXjbVImmaqAwzD/G2alZhmXlMfpLS+gstkz4rhQXBezKsEzOKF93uFjxFQddQbjHo8xJgZYYzZRmqpZ8dNp2IU2lrwQahyq91pcNDvgstA2Y8J7jN3VKaTAaWKAJAuw9uRIyow7JaXGti/ddkUL7NIfE6WM0GpgnvKyeTNAfKHSPwzaH5EZpWb9FS7jBs56ZeQi69oasL1++fPkS1dU/A9kBSAgCbucAAAAASUVORK5CYII=" />
-            </defs>
-         </svg>
-         <h4>Guaranteed quality & fashion</h4>
-      </div>
-
-   </section>
+         <div class="main-image">
+            <img class="image-1" src="images/heels-black.png" alt="heels">
+            <img class="image-2" src="images/heels-black.png" alt="heels">
+            <img class="image-3" src="images/heels-black.png" alt="heels">
+            <img class="image-4" src="images/heels-black.png" alt="heels">
+            <div class="main-eclipse"></div>
+         </div>
+   
+         <!-- <div class="main-signup">
+            <div class="main-signup-h1">
+               <h5>Sign up to avail!</h5>
+            </div>
+   
+            <div class="main-signup-input">
+               <div class="signup-input">
+                  <label for="Email">Email</label>
+                  <input type="text">
+               </div>
+   
+               <div class="signup-input">
+                  <label for="Password">Password</label>
+                  <input type="text">
+               </div>
+   
+               <div class="signup-input">
+                  <button>Sign up</button>
+               </div>
+            </div>
+         </div> -->
+      </main>
+   
+      <section class="section-offers">
+   
+         <div class="section-offers-info">
+            <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink">
+               <rect x="0.880981" width="62.4613" height="60" fill="url(#pattern0)" />
+               <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                     <use xlink:href="#image0_5_51" transform="matrix(0.0160099 0 0 0.0166667 0.0197029 0)" />
+                  </pattern>
+                  <image id="image0_5_51" width="60" height="60"
+                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADuUlEQVR4nO2aS2gTURSGr4oiSkHQhRsV3AgqbnysBBG1c05b6wODiGBduVEUF+JSd1oVipqcm0Cx0oWLgCsfm1K6SO5NK/VRaBVFQbRSURQfrQpRIydpWpvmMZNMOjPp/DC7uefOdx/nnnPmCuHLly9fvnxNqD+ycb6WeEIR9CqJX7XElJVnvE1CER5nW8LN6gs2LNcSHluFLPI8YpvCjXrSuWuxkjhgI2x2xgfYtnCblMSbdsNOPIS3hJuUkMbR6TMD92ORppWF2liF5j6EGxQLGusUwVjOBw6WWoaKMGZpaROMcV/C8X1LODT1w3C0V8JaewYSR3Ogn8fbm+uEq/YtQUs1t4pj+1kTtExfdthhdz9sM88SP2J3PyWlCIZzRv5lNY4Ptsm2c46qN2KmpSW+M+FsvsdDDdvztwdV9tlM+NYBYNinJSZLBw7wNF+IWMG5nFQh3CuckJJwwBQ0GSdtASb4rSUcFk5KmYKGz33Xdyz9v50nYa1AK8JrZQO7CdYCdFJR4/rs+56GNQutJHZl3/U8rFnoBCHyezUBawqa8Nl4VaQ2YM1A8zFVU7BZJcJ4MB+0IvxUyLFxG+FlKZPBiadn1jJ0LcGWhHYa9kGofoUiOJuuK3PFgeCbJtRawumetj1LbN7TzuzZeHtzXSahh24l4U+R8HBUE4biZKwpty/OdDi945x2RrOe1LlzcxMR2KolRjhvtRLbKsK/HDXpMOxOpcQc4WbFuDgm8byW8NpSAF8QHl4oiadcWSxn2QFZYNa/aIlXVbBhlZgNwDoLnvYBcEeTsVPMBmA9ddYfKoJjPR3bFs4KYD056yPsN/ojTctmBbCeBP+hJF4q579vPIybFGF7+kgj+KglXDFlx0ngyaUOrWYgeStwfKAI+/LaIrzsDWAJI8W+MUaNq3lQMjNZ1NYHbwATvM8XCMUlNGiJd4tFe54E1hIvZL+Hy7eajDNawivLdsjlSzrtrQla2dmoEGxO/ygj/FmGraSS2OYZp1XZoGFXIgQbSoJm5VlQwiEVMhqFVemihqE7ETb2c7rYH2laxCVVRXjbVImmaqAwzD/G2alZhmXlMfpLS+gstkz4rhQXBezKsEzOKF93uFjxFQddQbjHo8xJgZYYzZRmqpZ8dNp2IU2lrwQahyq91pcNDvgstA2Y8J7jN3VKaTAaWKAJAuw9uRIyow7JaXGti/ddkUL7NIfE6WM0GpgnvKyeTNAfKHSPwzaH5EZpWb9FS7jBs56ZeQi69oasL1++fPkS1dU/A9kBSAgCbucAAAAASUVORK5CYII=" />
+               </defs>
+            </svg>
+            <h4>Discount for up to 30%.</h4>
+         </div>
+   
+         <div class="section-offers-info">
+            <svg width="63" height="60" viewBox="0 0 63 60" fill="none" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink">
+               <rect width="62.4613" height="60" fill="url(#pattern0)" />
+               <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                     <use xlink:href="#image0_5_50" transform="matrix(0.0160099 0 0 0.0166667 0.0197029 0)" />
+                  </pattern>
+                  <image id="image0_5_50" width="60" height="60"
+                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1ElEQVR4nO1aWYhcRRQto4nGBVdcEUUDfrggRP0QcdRM+t3bkxgRW1w+zIfLp/phRBFG/EhGTIwh3fd2k2hk9MdWwTUgMjQ6r25n4ogicQsEXDIqMWKiIY5O4sjt6WdXP3u6MzM99HvOO1A/tbxXp27V3aqMSZAgQYIECRLMGdgc3iIMA5ZxvzCOCuNXwvDUcKH75GbjfIa0JXjULcI955koQxj7hHG8YSH80tLSMxuN+6DgnSMEv7n9LeOb4+PmKBNV+DlITUq2RvrVRmMt4ZY6sgS7hwvLzjBRhiV8K0TucUt4kzCO1KQGh/2N3efWjcvB1Vrv9tFxJuoQxj3Odvwu2I6W8Ul3IXxOrwjGaB8hlJB0V5s4wBL+5Ux6W60e7ncJldlbGbQJw92hbV8eLiyeb+IAS/CTs51/GO/tnaf1wrimjlQelmv9p/1LT7CE3zu7Yv8g9Vxk4gJL+Hq9tGCtcPp2S/hLbSHgUHnT8rO0v5qq0Jm/y8QJkoMuS/h3C039kvYts3ehZTjoSPdFE0dY8p6YnCx8Mkg9p2o/YSw6531nKdt1ookrbB6WqNOg5sgy7hWCj4RxlazLLNR2P5e+0SH7p5/Hq8z/FaX1K04Rgm8dya8K2oRT11iCp9U5sYQvC8PDkXc+WsESvOI4GF+UeruOUW1uGanRMbCE+ySfBhNHlNlbWe+AQFrrhfGxZorOEh6QbGqRiRMkm1okjL87RN7T+tKWruMqUqzVj1nG9RpthUjnTVwwXFg8Xxi3u7bYUs9l2mbz6etDbiVrvSq4+oWAXSYusASrG5Gqtt1Rv4W9B4K2qnYP2kZNHFBm74a6SIhwnxsTayBR7215jwRtluBrR8K/mqhDNqVOc33lsBlS+AW4OCT9zzQzIuR1h8Z9aKIOYXgt5Gnt2roBjm3Qz4bIjYU1tc94n4kyhPDe/5gXhtsa9S3n4Ipweie0UANqr01U4W+++SQheMMyvh8UYXy+2Rgp4OWWsOQGH2p/LeGzarpmdcLbc6nzq1nDbRWjr6uvWQmCh9Q1nM1/a+hoc+lr/Wz6ylklKusyC4UgIwxvNzpDTsz6hzD0D2a9S03cMN7bO69cgOuEsRDygloW3XqVrZqH5ZFOpSpUOhOJNfhmKiQnJw87LeODmrIxUYS0geSkkQ3jBptNX2DmAmGpmZ/DFV1AXreZC4SlXuofa5p21k1LVAg7Uv9R9UZHMhjSAcIO8YOavp1Osl1zX5Zwc9U/1+ubvh3FzIJIE64VWHskJPUoCME9lnBokm/1xYQw7mk2R72B0ISeJfi5xXdG4kJ4pJEjpHkuYXzHjaGbHxHcGxfCa4L5DG1ccroG/ho+Tvk7hM9EnfC/yqZyL6wX4RX/fKpE4ZAQPBcjpTX9oj68xtAtiQaILVHCz23O6zFThTT9MAyU896tGsQPF5YdXybE6jXoWOeIwm5N4gf3ze0gPKoxbrNtMpRNnz3xjKg9EdYRSvSAnndd/GkRDTATd09XuZpRLFYUx+wFH/36lMm0A1ZTN+zdOdO3FIFz4D5mmXEhfDfy2ZQdxcwCTQ9VEnatXwC0VyF1Gj55l+i5q3vX0UIhafhYLGaONnFGacLpzzRIsrdXIUURerMvDC+o1CckD1nV+p2eV4IECRIkMB3AP4++l+4YSPHoAAAAAElFTkSuQmCC" />
+               </defs>
+            </svg>
+            <h4>Premium offer for subscriber.</h4>
+         </div>
+   
+         <div class="section-offers-info">
+            <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink">
+               <rect x="0.880981" width="62.4613" height="60" fill="url(#pattern0)" />
+               <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                     <use xlink:href="#image0_5_51" transform="matrix(0.0160099 0 0 0.0166667 0.0197029 0)" />
+                  </pattern>
+                  <image id="image0_5_51" width="60" height="60"
+                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADuUlEQVR4nO2aS2gTURSGr4oiSkHQhRsV3AgqbnysBBG1c05b6wODiGBduVEUF+JSd1oVipqcm0Cx0oWLgCsfm1K6SO5NK/VRaBVFQbRSURQfrQpRIydpWpvmMZNMOjPp/DC7uefOdx/nnnPmCuHLly9fvnxNqD+ycb6WeEIR9CqJX7XElJVnvE1CER5nW8LN6gs2LNcSHluFLPI8YpvCjXrSuWuxkjhgI2x2xgfYtnCblMSbdsNOPIS3hJuUkMbR6TMD92ORppWF2liF5j6EGxQLGusUwVjOBw6WWoaKMGZpaROMcV/C8X1LODT1w3C0V8JaewYSR3Ogn8fbm+uEq/YtQUs1t4pj+1kTtExfdthhdz9sM88SP2J3PyWlCIZzRv5lNY4Ptsm2c46qN2KmpSW+M+FsvsdDDdvztwdV9tlM+NYBYNinJSZLBw7wNF+IWMG5nFQh3CuckJJwwBQ0GSdtASb4rSUcFk5KmYKGz33Xdyz9v50nYa1AK8JrZQO7CdYCdFJR4/rs+56GNQutJHZl3/U8rFnoBCHyezUBawqa8Nl4VaQ2YM1A8zFVU7BZJcJ4MB+0IvxUyLFxG+FlKZPBiadn1jJ0LcGWhHYa9kGofoUiOJuuK3PFgeCbJtRawumetj1LbN7TzuzZeHtzXSahh24l4U+R8HBUE4biZKwpty/OdDi945x2RrOe1LlzcxMR2KolRjhvtRLbKsK/HDXpMOxOpcQc4WbFuDgm8byW8NpSAF8QHl4oiadcWSxn2QFZYNa/aIlXVbBhlZgNwDoLnvYBcEeTsVPMBmA9ddYfKoJjPR3bFs4KYD056yPsN/ojTctmBbCeBP+hJF4q579vPIybFGF7+kgj+KglXDFlx0ngyaUOrWYgeStwfKAI+/LaIrzsDWAJI8W+MUaNq3lQMjNZ1NYHbwATvM8XCMUlNGiJd4tFe54E1hIvZL+Hy7eajDNawivLdsjlSzrtrQla2dmoEGxO/ygj/FmGraSS2OYZp1XZoGFXIgQbSoJm5VlQwiEVMhqFVemihqE7ETb2c7rYH2laxCVVRXjbVImmaqAwzD/G2alZhmXlMfpLS+gstkz4rhQXBezKsEzOKF93uFjxFQddQbjHo8xJgZYYzZRmqpZ8dNp2IU2lrwQahyq91pcNDvgstA2Y8J7jN3VKaTAaWKAJAuw9uRIyow7JaXGti/ddkUL7NIfE6WM0GpgnvKyeTNAfKHSPwzaH5EZpWb9FS7jBs56ZeQi69oasL1++fPkS1dU/A9kBSAgCbucAAAAASUVORK5CYII=" />
+               </defs>
+            </svg>
+            <h4>Guaranteed quality & fashion</h4>
+         </div>
+   
+      </section>
 
 </body>
 

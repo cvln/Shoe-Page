@@ -1,0 +1,102 @@
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-weight: 400;
+    font-size: 1.953rem;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 1.563rem;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+  main,
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 0;
+  }
+  .main .main-image {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 25px;
+  }
+  .main .main-image img {
+    max-width: 250px;
+  }
+  .main .main-image .image-1 {
+    top: 10px;
+    right: 0;
+  }
+  .main .main-image .image-2 {
+    top: 50px;
+    right: -10px;
+  }
+  .main .main-image .image-3 {
+    top: 195px;
+    right: 0;
+  }
+  .main .main-image .image-4 {
+    top: 220px;
+    right: -70px;
+  }
+  .main .main-image .main-eclipse {
+    width: 300px;
+    height: 300px;
+  }
+  .main .main-text {
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  }
+  .main .main-text h1,
+  .main .main-text p {
+    text-align: center;
+  }
+  .main .main-signup {
+    border: 1px solid skyblue;
+    text-align: center;
+  }
+  .main .main-signup .main-signup-input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-self: flex-start;
+    border: 1px solid skyblue;
+    max-width: 100%;
+  }
+  .main .main-signup .main-signup-input .signup-input {
+    align-self: flex-start;
+    padding: 0 25px;
+    border: 1px solid skyblue;
+  }
+}
+.section-offers {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px;
+  gap: 10px;
+}
+.section-offers svg {
+  width: 40px;
+  height: 40px;
+}
+.section-offers .section-offers-info h4 {
+  font-size: large;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=media-queries.css.map */
