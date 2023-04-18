@@ -46,12 +46,13 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-main, section {
+main, section, .navbar {
   padding-left: 125px;
   padding-right: 125px;
+  max-width: 1440px;
 }
 
 .navbar {
@@ -59,7 +60,8 @@ main, section {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 125px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   gap: 10px;
 }
 .navbar .navbar-link {
