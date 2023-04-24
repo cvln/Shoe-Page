@@ -15,6 +15,7 @@
       font-size: 1.25rem;
    }
 
+   .navbar,
    main,
    section {
       padding-left: 15px;
@@ -80,57 +81,40 @@
       }
    }
 
-
-   .main .main-signup {
-      //padding: 0;
-      // max-width: 100%;
-      border: 1px solid skyblue;
-      text-align: center;
+   .section-sign-up {
+      .sign-up {
+         .sign-up-content {
+            flex-direction: column;
+            button, input {
+               width: 100%;
+            }
+   
+            .sign-up-input:last-child {
+               align-self: center;
+            }
+   
+         }
+      }
    }
-
-
-   .main .main-signup .main-signup-input {
-      flex-direction: column;
+   
+   .section-offers {
       justify-content: center;
-      align-items: stretch;
-      align-self: flex-start;
-      border: 1px solid skyblue;
-      max-width: 100%;
-
-      .signup-input {
-         align-self: flex-start;
-         padding: 0 25px;
-         border: 1px solid skyblue;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 25px;
+      gap: 10px;
+   
+      svg {
+         width: 40px;
+         height: 40px;
+      }
+   
+      .section-offers-info h4 {
+         font-size: large;
       }
    }
 }
 
-.section-offers {
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   padding: 25px;
-   gap: 10px;
 
-   svg {
-      width: 40px;
-      height: 40px;
-   }
 
-   .section-offers-info h4 {
-      font-size: large;
-   }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px),
-(orientation: landscape) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}

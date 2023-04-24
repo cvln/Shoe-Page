@@ -51,14 +51,15 @@ body {
    font-family: $fonts;
    background-color: #141414;
    overflow-x: hidden;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   margin: 0 auto;
 }
 
-main, section, .navbar {
+main,
+section,
+.navbar {
    padding-left: 125px;
    padding-right: 125px;
+   margin: 0 auto;
    max-width: 1440px;
 }
 
@@ -76,10 +77,10 @@ main, section, .navbar {
       justify-content: space-around;
       align-items: center;
       gap: 5px;
-   
+
       li {
          list-style-type: none;
-   
+
          a {
             display: block;
             color: $primary-colorThree;
@@ -87,7 +88,7 @@ main, section, .navbar {
             text-decoration: none;
             padding: 0 25px;
          }
-   
+
          a:hover {
             color: $primary-colorFour;
          }
@@ -117,21 +118,21 @@ main, section, .navbar {
    gap: 25px;
    width: 100%;
    height: auto;
-   
+
    .main-text {
       flex-grow: 1;
 
       display: flex;
       flex-direction: column;
       align-items: baseline;
-      padding:  50px 0;
+      padding: 50px 0;
       gap: 25px;
-   
+
       h1 {
          font-weight: 800;
          line-height: 1em;
          color: $primary-colorTwo;
-               
+
          span {
             background: radial-gradient(85.83% 85.83% at 50% 50%, $primary-colorTwo 0%, #C69749 100%);
             -webkit-text-fill-color: transparent;
@@ -154,7 +155,7 @@ main, section, .navbar {
       align-items: center;
       position: relative;
       padding: 50px;
-   
+
       .main-eclipse {
          width: 350px;
          height: 350px;
@@ -162,17 +163,17 @@ main, section, .navbar {
          opacity: 0.8;
          z-index: -1;
       }
-      
+
       img {
          max-width: 320px;
       }
-      
+
       .image-1 {
          position: absolute;
          top: 10px;
          right: 30px;
       }
-      
+
       .image-2 {
          position: absolute;
          top: 50px;
@@ -180,7 +181,7 @@ main, section, .navbar {
          transform: rotate(-19.45deg);
          z-index: 1;
       }
-      
+
       //  mirror for .image-1
       .image-3 {
          position: absolute;
@@ -188,9 +189,9 @@ main, section, .navbar {
          right: 30px;
          opacity: .5;
          mix-blend-mode: soft-light;
-         transform: scaleY(-1);         
+         transform: scaleY(-1);
       }
-      
+
       //  mirror for .image-2
       .image-4 {
          position: absolute;
@@ -200,65 +201,7 @@ main, section, .navbar {
          mix-blend-mode: soft-light;
          transform: rotate(-19.45deg) scaleY(-1);
       }
-   }   
-}
-
-// section sign-up
-.main .main-signup {
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   background: radial-gradient(47.85% 1353.38% at 19.54% 58.38%,
-         rgba(255, 255, 255, 0.3) 0%,
-         rgba(217, 217, 217, 0) 100%)
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-   ;
-   border-radius: 10px;
-   padding: 25px;
-}
-
-.main .main-signup .main-signup-h1 h5 {
-   background: linear-gradient(186.45deg, #FFFFFF 54.69%, #C69749 94.94%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-clip: text;
-}
-
-.main .main-signup .main-signup-input {
-   display: flex;
-   flex-direction: row;
-   justify-content: start;
-   align-items: center;
-   padding: 0px;
-   gap: 20px;
-}
-
-.main .main-signup .main-signup-input .signup-input {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   align-self: flex-end;
-   gap: 5px;
-   color: $primary-colorTwo;
-}
-
-.main .main-signup .main-signup-input .signup-input input {
-   width: 100%;
-   height: 30px;
-   padding: 5px;
-   border-radius: 10px;
-   border: none;
-}
-
-.main .main-signup .main-signup-input .signup-input button {
-   width: auto;
-   height: 30px;
-   font-family: $fonts;
-   padding: 5px 15px;
-   border-radius: 10px;
-   border: none;
-   background-color: $primary-colorThree;
+   }
 }
 
 // section-offers
@@ -267,18 +210,91 @@ main, section, .navbar {
    justify-content: space-between;
    align-items: center;
    gap: 25px;
-   padding: 0 125px;
 
    .section-offers-info {
       display: flex;
       justify-content: center;
       align-items: center;
-   
+
       h4 {
          padding: 10px 5px;
          background: linear-gradient(180deg, #C69749 0%, #FFFFFF 100%);
          -webkit-text-fill-color: transparent;
          background-clip: text;
+      }
+   }
+}
+
+// section sign-up
+.section-sign-up {
+   padding-top: 25px;
+   padding-bottom: 25px;
+
+   .sign-up {
+      display: flex;
+      flex-direction: column;
+      background: radial-gradient(47.85% 1353.38% at 19.54% 58.38%,
+            rgba(255, 255, 255, 0.3) 30%,
+            rgba(217, 217, 217, 0) 100%)
+         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      ;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #C69749;
+      max-width: max-content;
+      margin: 0 auto;
+
+      h4 {
+         background: linear-gradient(186.45deg, #FFFFFF 54.69%, #C69749 94.94%);
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+         font-weight: 600;
+         padding-bottom: 15px;
+      }
+
+      .sign-up-content {
+         display: flex;
+         flex-direction: row;
+         width: max-content;
+
+         gap: 15px;
+
+         .sign-up-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: flex-end;
+            gap: 10px;
+            color: $primary-colorThree;
+            font-weight: 600;
+
+            input {
+               width: 300px;
+               height: 30px;
+               padding: 5px;
+               border-radius: 8px;
+               border: none;
+            }
+
+            button {     
+               width: 100px;
+               height: 30px;
+               font-family: $fonts;
+               padding: 5px 15px;
+               border-radius: 10px;
+               border: none;
+               background-color: #FFFFFF;
+               color: $primary-colorThree;
+               font-weight: 500;
+            }
+
+            button:hover {
+               cursor: pointer;
+               background-color: $primary-colorOne;
+               color: $primary-colorThree;
+               font-weight: 500;
+            }
+         }
       }
    }
 }

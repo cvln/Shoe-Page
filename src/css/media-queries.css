@@ -11,6 +11,7 @@
     font-weight: 400;
     font-size: 1.25rem;
   }
+  .navbar,
   main,
   section {
     padding-left: 15px;
@@ -63,40 +64,27 @@
   .main .main-text p {
     text-align: center;
   }
-  .main .main-signup {
-    border: 1px solid skyblue;
-    text-align: center;
-  }
-  .main .main-signup .main-signup-input {
+  .section-sign-up .sign-up .sign-up-content {
     flex-direction: column;
+  }
+  .section-sign-up .sign-up .sign-up-content button, .section-sign-up .sign-up .sign-up-content input {
+    width: 100%;
+  }
+  .section-sign-up .sign-up .sign-up-content .sign-up-input:last-child {
+    align-self: center;
+  }
+  .section-offers {
     justify-content: center;
-    align-items: stretch;
-    align-self: flex-start;
-    border: 1px solid skyblue;
-    max-width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 10px;
   }
-  .main .main-signup .main-signup-input .signup-input {
-    align-self: flex-start;
-    padding: 0 25px;
-    border: 1px solid skyblue;
+  .section-offers svg {
+    width: 40px;
+    height: 40px;
   }
-}
-.section-offers {
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 25px;
-  gap: 10px;
-}
-.section-offers svg {
-  width: 40px;
-  height: 40px;
-}
-.section-offers .section-offers-info h4 {
-  font-size: large;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=media-queries.css.map */
+  .section-offers .section-offers-info h4 {
+    font-size: large;
+  }
+}/*# sourceMappingURL=media-queries.css.map */
