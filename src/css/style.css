@@ -252,13 +252,13 @@ section,
   padding: 5px 15px;
   border-radius: 10px;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #141414;
   color: #C69749;
   font-weight: 500;
 }
 .section-sign-up .sign-up .sign-up-content .sign-up-input button:hover {
   cursor: pointer;
-  background-color: #141414;
+  background-color: #f5f5f5;
   color: #C69749;
   font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
