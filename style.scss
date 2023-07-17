@@ -283,14 +283,14 @@ section,
                padding: 5px 15px;
                border-radius: 10px;
                border: none;
-               background-color: #FFFFFF;
+               background-color: $primary-colorOne;
                color: $primary-colorThree;
                font-weight: 500;
             }
 
             button:hover {
                cursor: pointer;
-               background-color: $primary-colorOne;
+               background-color: $primary-colorTwo;
                color: $primary-colorThree;
                font-weight: 500;
             }
